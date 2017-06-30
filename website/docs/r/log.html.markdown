@@ -27,6 +27,7 @@ The following arguments are supported:
 
 * `logset_id` - (Required) The id of the `logentries_logset` resource.
 * `name` - (Required) The name of the log. The name should be short and descriptive. For example, Apache Access, Hadoop Namenode.
+* `filename` - (Optional) the filename of the log.
 * `retention_period` - (Optional, default `ACCOUNT_DEFAULT`) The retention period (`1W`, `2W`, `1M`, `2M`, `6M`, `1Y`, `2Y`, `UNLIMITED`, `ACCOUNT_DEFAULT`)
 * `source` - (Optional, default `token`) The log source (`token`, `syslog`, `agent`, `api`). Review the Logentries [log inputs documentation](https://docs.logentries.com/docs/) for more information.
 * `type` - (Optional) The log type. See the Logentries [log type documentation](https://logentries.com/doc/log-types/) for more information.
