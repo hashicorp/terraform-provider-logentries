@@ -2,12 +2,13 @@ package logentries
 
 import (
 	"fmt"
-	lexp "github.com/hashicorp/terraform/builtin/providers/logentries/expect"
+	"testing"
+
 	"github.com/hashicorp/terraform/helper/acctest"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 	"github.com/logentries/le_goclient"
-	"testing"
+	lexp "github.com/terraform-providers/terraform-provider-logentries/logentries/expect"
 )
 
 type LogResource struct {
