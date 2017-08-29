@@ -57,7 +57,8 @@ func (l *LogSetClient) Create(createRequest LogSetCreateRequest) (*LogSet, error
 }
 
 type LogSetReadRequest struct {
-	Key string
+	Key  string
+	Name string
 }
 
 type LogSetReadResponse struct {
@@ -74,6 +75,8 @@ func (l *LogSetClient) Read(readRequest LogSetReadRequest) (*LogSet, error) {
 
 	for _, logSet := range response.LogSets {
 		if logSet.Key == readRequest.Key {
+			return &logSet, nil
+		} else if logSet.Name == readRequest.Name {
 			return &logSet, nil
 		}
 	}
