@@ -19,7 +19,9 @@ func Provider() terraform.ResourceProvider {
 				Description: descriptions["account_key"],
 			},
 		},
-
+		DataSourcesMap: map[string]*schema.Resource{
+			"logentries_logset": dataSourceLogentriesLogSet(),
+		},
 		ResourcesMap: map[string]*schema.Resource{
 			"logentries_log":    resourceLogentriesLog(),
 			"logentries_logset": resourceLogentriesLogSet(),

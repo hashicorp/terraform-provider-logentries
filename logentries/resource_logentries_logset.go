@@ -48,9 +48,12 @@ func resourceLogentriesLogSetCreate(d *schema.ResourceData, meta interface{}) er
 
 func resourceLogentriesLogSetRead(d *schema.ResourceData, meta interface{}) error {
 	client := meta.(*logentries.Client)
+
 	res, err := client.LogSet.Read(logentries.LogSetReadRequest{
-		Key: d.Id(),
+		Key:  d.Id(),
+		Name: d.Get("name").(string),
 	})
+
 	if err != nil {
 		if strings.Contains(err.Error(), "No such log set") {
 			log.Printf("Logentries LogSet Not Found - Refreshing from State")
@@ -65,7 +68,9 @@ func resourceLogentriesLogSetRead(d *schema.ResourceData, meta interface{}) erro
 		return nil
 	}
 
+	d.SetId(res.Key)
 	d.Set("location", res.Location)
+
 	return nil
 }
 
