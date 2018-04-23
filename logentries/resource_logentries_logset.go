@@ -68,6 +68,8 @@ func resourceLogentriesLogSetRead(d *schema.ResourceData, meta interface{}) erro
 		return nil
 	}
 
+	// extra SetId call here is used by the LogSet data source, which simply
+	// re-uses this resourceLogentriesLogSetRead method
 	d.SetId(res.Key)
 	d.Set("location", res.Location)
 
