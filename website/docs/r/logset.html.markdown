@@ -1,7 +1,7 @@
 ---
 layout: "logentries"
 page_title: "Logentries: logentries_logset"
-sidebar_current: "docs-logentries-logset"
+sidebar_current: "docs-logentries-resource-logset"
 description: |-
   Creates a Logentries logset.
 ---

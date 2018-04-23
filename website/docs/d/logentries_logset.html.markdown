@@ -1,7 +1,7 @@
 ---
 layout: "logentries"
 page_title: "Logentries: logentries_logset"
-sidebar_current: "docs-logentries-logentries_logset"
+sidebar_current: "docs-logentries-datasource-logentries_logset"
 description: |-
   Get information on Logentries LogSet.
 ---
