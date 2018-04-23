@@ -523,10 +523,10 @@
 			"revisionTime": "2016-08-03T19:07:31Z"
 		},
 		{
-			"checksumSHA1": "KoB26db2df078Y2UClT7twI+dxg=",
+			"checksumSHA1": "eXY3j9R7m45X38ngqaDwnAfvoYQ=",
 			"path": "github.com/logentries/le_goclient",
-			"revision": "f6d02e2fca401d3550e08a292f54b0efb6a578f0",
-			"revisionTime": "2016-07-04T14:48:39Z"
+			"revision": "65841d26d18f4ccae5ee1ce6e7869a02a8ad0983",
+			"revisionTime": "2017-08-09T10:03:42Z"
 		},
 		{
 			"checksumSHA1": "guxbLo8KHHBeM0rzou4OTzzpDNs=",
