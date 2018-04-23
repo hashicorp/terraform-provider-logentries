@@ -1,8 +1,8 @@
-## 1.0.0 (Unreleased)
+## 1.0.0 (April 23, 2018)
 
 FEATURES:
 
-* **New Data Source:** `logentries_logset` [GH-4]
+* **New Data Source:** `logentries_logset` ([#4](https://github.com/terraform-providers/terraform-provider-logentries/issues/4))
 
 ## 0.1.0 (June 21, 2017)
 
