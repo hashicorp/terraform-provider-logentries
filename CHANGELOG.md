@@ -1,4 +1,9 @@
-## 0.1.1 (Unreleased)
+
+
+FEATURES:
+
+* **New Data Source:** `logentries_logset` [GH-4]
+
 ## 0.1.0 (June 21, 2017)
 
 NOTES:
