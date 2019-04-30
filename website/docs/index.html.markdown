@@ -8,6 +8,8 @@ description: |-
 
 # Logentries Provider
 
+~> **This provider is deprecated,** and the service it interacts with has been discontinued.
+
 The Logentries provider is used to manage Logentries logs and log sets. Logentries provides live log management and analytics. The provider needs to be configured with a Logentries account key before it can be used.
 
 Use the navigation to the left to read about the available resources.
